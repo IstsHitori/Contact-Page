@@ -1,3 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Lato:wght@700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro";
+}
 
+body {
+  min-height: 100vh;
+  padding: 15px;
+  background-image: url("../img/bg-image.svg");
+  display: flex;
+  flex-direction: column;
+}
+
+header .logo .logo-img {
+  width: 80px;
+}
+
+li {
+  list-style: none;
+  color: #111729;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  text-align: center;
+}
+.text h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+p {
+  margin-top: 15px;
+  color: #F8FAFC;
+}
+
+input[type=submit] {
+  color: #4036A9;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+  padding: 26px;
+  border-radius: 15px;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #e3e4e6;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 20px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.form-container p {
+  font-size: 14px;
+}
+.form-container .first {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 500px;
+}
+.form-container .first div {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+}
+.form-container .first p {
+  margin-bottom: 8px;
+}
+.form-container div button {
+  font-weight: 500;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+.form-container div button:hover {
+  background-color: #e3e4e6;
+}
+
+input[type=text] {
+  border: none;
+  outline: none;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+textarea {
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 1rem;
+  resize: none;
+}
+
+.dropdown {
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  display: none;
+}
+.dropdown li {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+.dropdown li:hover {
+  background-color: #e3e4e6;
+}
+
+.active {
+  display: flex;
+}
+
+@media (max-width: 300px) {
+  .first {
+    flex-direction: column;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
