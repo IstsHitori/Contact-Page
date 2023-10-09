@@ -46,8 +46,8 @@ p {
 input[type=submit] {
   color: #4036A9;
   border: none;
-  outline: none;
   width: 100%;
+  outline: none;
   font-size: 1rem;
   text-align: center;
   padding: 26px;
@@ -68,6 +68,13 @@ input[type=submit]:hover {
   padding: 20px;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  max-width: 500px;
+}
+.form-container form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .form-container p {
   font-size: 14px;
@@ -75,18 +82,17 @@ input[type=submit]:hover {
 .form-container .first {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  max-width: 500px;
+  width: 100%;
+  gap: 10px;
 }
-.form-container .first div {
-  width: 240px;
-  display: flex;
-  flex-direction: column;
+.form-container .first .lista-container {
+  min-width: 220px;
 }
 .form-container .first p {
   margin-bottom: 8px;
 }
-.form-container div button {
+.form-container .first button {
+  width: 100%;
   font-weight: 500;
   text-align: left;
   display: flex;
@@ -97,8 +103,11 @@ input[type=submit]:hover {
   cursor: pointer;
   justify-content: space-between;
 }
-.form-container div button:hover {
+.form-container .first button:hover {
   background-color: #e3e4e6;
+}
+.form-container .first input {
+  width: 100%;
 }
 
 input[type=text] {
@@ -115,6 +124,7 @@ textarea {
   padding: 15px;
   font-size: 1rem;
   resize: none;
+  width: 100%;
 }
 
 .dropdown {
@@ -142,7 +152,14 @@ textarea {
   bottom: -0.5rem;
 }
 
-@media (max-width: 300px) {
+.message {
+  gap: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 500px) {
   .first {
     flex-direction: column;
   }
