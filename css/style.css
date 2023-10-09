@@ -95,6 +95,7 @@ input[type=submit]:hover {
   border-radius: 15px;
   border: none;
   cursor: pointer;
+  justify-content: space-between;
 }
 .form-container div button:hover {
   background-color: #e3e4e6;
@@ -117,6 +118,7 @@ textarea {
 }
 
 .dropdown {
+  position: relative;
   background-color: white;
   border-radius: 15px;
   display: flex;
@@ -124,6 +126,7 @@ textarea {
   gap: 20px;
   padding: 20px;
   display: none;
+  transition: 0.5s;
 }
 .dropdown li {
   cursor: pointer;
@@ -136,6 +139,7 @@ textarea {
 
 .active {
   display: flex;
+  bottom: -0.5rem;
 }
 
 @media (max-width: 300px) {

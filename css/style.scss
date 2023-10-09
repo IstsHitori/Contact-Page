@@ -95,6 +95,7 @@ input[type="submit"]{
         border-radius: 15px;
         border: none;
         cursor: pointer;
+        justify-content: space-between;
         &:hover{
             background-color: #e3e4e6;
         }
@@ -115,6 +116,7 @@ textarea{
     resize: none;
 }
 .dropdown{
+    position: relative;
     background-color: white;
     border-radius: 15px;
     display: flex;
@@ -122,6 +124,7 @@ textarea{
     gap: 20px;
     padding: 20px;
     display: none;
+    transition: .5s;
     li{
         cursor: pointer;
         padding: 5px 10px;
@@ -133,6 +136,7 @@ textarea{
 }
 .active{
     display: flex;
+    bottom: -.5rem;
 }
 
 

@@ -32,21 +32,22 @@
                     
                     <div class="lista-container">
                         <p>Company Size</p>
-                        <button onclick="mostrarLista('#dropdown-1')" type="button" class="btn-lista">Employees <img src="./img/Expand_down.svg" alt="" ></button>
+                        <button id="btn-1"onclick="mostrarLista('#dropdown-1')" type="button" class="btn-lista"><span id="span-text-1">Employees</span><img src="./img/Expand_down.svg" alt="" ></button>
                         <ul class="dropdown" id="dropdown-1">
-                            <li>50-100 employees</li>
-                            <li>100-200 employees</li>
-                            <li>200-300 employees</li>
+                            <li id="li-1-1" onclick="seleccionarOpcion('#li-1-1')">50-100 employees</li>
+                            <li id="li-1-2" onclick="seleccionarOpcion('#li-1-2')">100-200 employees</li>
+                            <li id="li-1-3" onclick="seleccionarOpcion('#li-1-3')">200-300 employees</li>
                         </ul>
                     </div>
                     
                     <div class="lista-container">
                         <p>Subject</p>
-                        <button onclick="mostrarLista('#dropdown-2')" type="button" class="btn-lista">Subject <img src="./img/Expand_down.svg" alt=""></button>
+                        <button id="btn-2"onclick="mostrarLista('#dropdown-2')" type="button" class="btn-lista"><span id="span-text-2">Subject</span><img src="./img/Expand_down.svg" alt="" ></button>
+
                         <ul class="dropdown" id="dropdown-2">
-                            <li>Bulding Landing pages</li>
-                            <li>Frontend</li>
-                            <li>Backend</li>
+                            <li id="li-2-1" onclick="seleccionarOpcion('#li-2-1')">50-100 employees</li>
+                            <li id="li-2-2" onclick="seleccionarOpcion('#li-2-2')">100-200 employees</li>
+                            <li id="li-2-3" onclick="seleccionarOpcion('#li-2-3')">200-300 employees</li>
                         </ul>
     
                     </div>
